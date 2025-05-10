@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Repositório Hacker Style</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="terminal">
+        <div class="system">Bem-vindo ao Repositório da Organização [H4CK3R]</div>
+        <div class="system">Sistema de Arquivos Classificados v3.1.4</div>
+        <div class="system">Digite 'help' para ver os comandos disponíveis</div>
+        <br>
+    </div>
+    <div id="input-line">
+        <span id="prompt">C:\&gt;</span>
+        <input type="text" id="cmd" autofocus>
+        <span class="blink">_</span>
+    </div>
+
+    <!-- Carrega os scripts em ordem -->
+    <!-- No final do <body> -->
+<script src="js/fileDatabase.js"></script>
+<script src="js/commands.js"></script>
+<script src="js/terminal.js"></script>
+<script src="js/init.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

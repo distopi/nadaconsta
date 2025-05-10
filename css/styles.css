@@ -1,0 +1,95 @@
+body {
+    background-color: #000;
+    color: #0f0;
+    font-family: 'Courier New', monospace;
+    padding: 10px;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    line-height: 1.2;
+}
+
+#terminal {
+    height: calc(100% - 30px);
+    overflow-y: auto;
+    white-space: pre-wrap;
+    contain: strict;
+    overflow-anchor: none;
+}
+
+#input-line {
+    display: flex;
+    align-items: center;
+}
+
+#prompt {
+    margin-right: 10px;
+    color: #0f0;
+}
+
+#cmd {
+    background-color: transparent;
+    border: none;
+    color: #0f0;
+    font-family: 'Courier New', monospace;
+    flex-grow: 1;
+    outline: none;
+    caret-color: #0f0;
+}
+
+.blink {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.error { color: #f00; }
+.success { color: #0f0; }
+.system { color: #0af; }
+.warning { color: #ff0; }
+
+.file-container {
+    border: 1px dashed #333;
+    padding: 4px;
+    margin: 3px 0;
+    background: #111;
+    color: #0f0;
+}
+
+.file-loading { border-left: 3px solid #f00; }
+.file-loaded { border-left: 3px solid #0f0; }
+
+.file-content {
+    display: none;
+    margin-top: 3px;
+}
+
+.progress-bar {
+    background: #222;
+    height: 15px;
+    margin: 3px 0;
+}
+
+.progress-fill {
+    background: #0f0;
+    height: 100%;
+    width: 0%;
+}
+
+.system, .success, .error, .warning {
+    margin: 2px 0;
+    padding: 0;
+}
+
+ul {
+    margin: 2px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin: 1px 0;
+}
+
